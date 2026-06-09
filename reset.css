@@ -1,0 +1,20 @@
+/* Reset para todo */
+* {
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* configura todo el html */
+html {
+ font-size: 16px; /* Esto hace que 1rem = 16px */
+}
+
+/* Todos los estilos bases del body */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size:1rem;
+  line-height: 1.5;
+  color:red;
+  background-color:antiquewhite
+}
