@@ -8,7 +8,7 @@
 
   /* Texto y fondo */
   --color-texto: hsl(0, 99%, 72%);
-  --color-fondo: hsl(0, 83%, 40%);
+  --color-fondo: hsl(0, 60%, 45%);
 
   /* Espaciado */
   --espaciado-sm: 0.5rem;
@@ -56,48 +56,49 @@
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 /* Tarjeta */
 .foto-tarjeta {
   background-color: var(--color-fondo);
-  border-radius: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,.15);
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform .3s ease;
 }
 
 /* Imagen */
 .foto-tarjeta img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
+ width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
 /* Información */
 .foto-info {
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .foto-titulo {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-primario);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .foto-descripcion {
-  font-size: 1rem;
-  color: var(--color-primario-claro);
-  margin: 0;
+  font-size: 0.9rem;
+  color: #0f0f0f;
+  line-height: 1.4;
 }
 
 /* Hover */
 .foto-tarjeta:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+   transform: translateY(-5px);
 }
 
 /* Footer */
